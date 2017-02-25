@@ -14,5 +14,5 @@ socket.on('disconnect', function () {
 });
 
 socket.on('newMessage', function(message) {
-    console.log(message.from, message.text);
+    console.log(message.from, message.text, message.createdAt);
 });
